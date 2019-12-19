@@ -1,0 +1,5 @@
+break *0x400a15
+break *0x0000000000400a85
+break *0x400aed
+tbreak main
+
